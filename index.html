@@ -5,167 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- css link -->
     <link rel="stylesheet" href="./styles/style.css">
+    <!-- fontawesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- navbar -->
-<nav class="navbar">
-    <ul class="link-group">
-        <li class="link active"><a href="#">home</a></li>
-        <li class="link"><a href="#aboutme">about</a></li>
-        <li class="link"><a href="#myskills">projects</a></li>
-        <li class="link"><a href="#contact">contact</a></li>
-    </ul>
-</nav>
-<!-- home section -->
-<section class="home-section active">
-    <h1 class="hero-heading" id="aboutme">hello, i am <br> <span>DevaKumar</span> </h1>
-    <img src="./assets/images/IMG20200420181316.jpg" class="home-img" alt="my image">
-    
-</section>
+    <!-- header section -->
+    <header>
+        <div class="logo">
+            <img src="./assets/images/icon.png" alt="">
+        </div>
+        <button class="menu-button" aria-label="menu-navigation">
+            <span class="menu"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-items"><a href="#home"class="nav-link">Home</a></li>
+                <li class="nav-items"><a href="#aboutme"class="nav-link">About me</a></li>
+                <li class="nav-items"><a href="#projects"class="nav-link">Projects</a></li>
+                <li class="nav-items"><a href="#"class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- intro section -->
+    <section class="intro" id="home">
+        <h1 class="section-title section-title-intro">Hi iam <strong>Devakumar</strong></h1>
+        <p class="section-subtitle section-subtitle-intro">Full Stack Developer</p>
+        <img src="./assets/images/IMG20200420181316.jpg" alt="my-image">
+    </section>
+    <!-- about me-->
+    <section class="about-me" id="aboutme">
+        <h2 class="section-title section-title-about"> Who I am</h2>
+        <p class="section-subtitle section-subtitle-about"></p>
 
-<div class="content" >
-<section class="about_me" id="aboutme">
-    <br>
-    <h2 class="title"><ul>about</ul></h2>
-    <p class="about_me_description">Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology.</p>
-    <div class="about_me_section">
-        <div class="know_me">
-    <h2>Get to know me !</h2>
-    <p>I am a Full Stack Web Developer with a passion for learning new languages and problem solving techniques.</p>
-    </div>
-    <br>
-    <br>
-    <div class="my_skill" id="myskills">
-    <h2>My Skills</h2>
-    <ul class="skills">
-        <li>GIT</li>
-        <li>GitHub</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React JS</li>
-    </ul>
-    </div>
-    </div>
-</section>
-<section class="projects" >
-    <div>
-        <h2 class="title">PROJECTS</h2>
-    </div>
-    <div class="slider">
-        <div class="slides">
-        <input type="radio" name="radio_btn" id="radio1">
-        <input type="radio" name="radio_btn" id="radio2">
-        <input type="radio" name="radio_btn" id="radio3">
-        <input type="radio" name="radio_btn" id="radio4">
-        <input type="radio" name="radio_btn" id="radio5">
-        <input type="radio" name="radio_btn" id="radio6">
-        <input type="radio" name="radio_btn" id="radio7">
-        <input type="radio" name="radio_btn" id="radio8">
-    
-
-        <div class="slide first">
-            <a href="https://chat-app-css-illustration-devakumar.netlify.app/" target="_blank"><img src="./assets/images/cssillusration.png" alt="Chat App"></a>
-        </div>
-        <div class="slide">
-            <a href="https://clipboard-landing-page-challenge-devakumar.netlify.app/" target="_blank"><img src="./assets/images/clipboardlandingpage.png" alt="Clipboard Landing Page"></a>
-        </div>
-        <div class="slide">
-            <a href="https://expense-tracker-deva.netlify.app/" target="_blank"><img src="./assets/images/expencetracker.png" alt="Expense Tracker App"></a>
-        </div>
-        <div class="slide">
-            <a href="https://form-validation-deva.netlify.app/" target="_blank"><img src="./assets/images/formvalidation.png" alt="Form Validation"></a>
-        </div>
-        <div class="slide">
-            <a href="https://fylo-landing-page-devakumar.netlify.app/" target="_blank"><img src="./assets/images/fylolandingpage.png" alt="Fylo Landing Page"></a>
-        </div>
-        <div class="slide">
-            <a href="https://testimonials-grid-devakumar.netlify.app/" target="_blank"><img src="./assets/images/testinmonialgrid.png" alt="Testimonial Grid Section"></a>
-        </div>
-        <div class="slide">
-            <a href="https://single-price-grid-component-challenge-devakumar.netlify.app/" target="_blank"><img src="./assets/images/singlepricegrid.png" alt="Single Price"></a>
-        </div>
-        <div class="slide">
-            <a href="https://stats-preview-card-devakumar.netlify.app/" target="_blank"><img src="./assets/images/statepreviewcard.png" alt="Order Summary Component"></a>
+        <div class="aboutme-body">
+            <p></p>
+            <p></p>
         </div>
 
+        <img src="./assets/images/deva.JPG" alt="myprofile">
+    </section>
+    <!-- project section -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">My projects</h2>
+        <p class="section-subtitle"></p>
 
-        <div class="navigation_auto">
-            <div class="auto_btn1"></div>
-            <div class="auto_btn2"></div>
-            <div class="auto_btn3"></div>
-            <div class="auto_btn4"></div>
-            <div class="auto_btn5"></div>
-            <div class="auto_btn6"></div>
-            <div class="auto_btn7"></div>
-            <div class="auto_btn8"></div>
-            
+        <div class="projects-list">
+            <!-- project 01 -->
+            <a href="#" class="projects-item">
+                <img src="./assets/images/clipboardlandingpage.png" alt="" class="projects-img">
+            </a>
+             <!-- project 02 -->
+             <a href="#" class="projects-item">
+                <img src="./assets/images/cssillusration.png" alt="" class="projects-img">
+            </a>
+             <!-- project 03 -->
+             <a href="#" class="projects-item">
+                <img src="./assets/images/expencetracker.png" alt="" class="projects-img">
+            </a>
+             <!-- project 04 -->
+             <a href="#" class="projects-item">
+                <img src="./assets/images/formvalidation.png" alt="" class="projects-img">
+            </a>
+             <!-- project 05 -->
+             <a href="#" class="projects-item">
+                <img src="./assets/images/fylolandingpage.png" alt="" class="projects-img">
+            </a>
         </div>
-    </div>
-
-    <div class="navigation_manual">
-        <label for="radio1" class="manual_btn"></label>
-        <label for="radio2" class="manual_btn"></label>
-        <label for="radio3" class="manual_btn"></label>
-        <label for="radio4" class="manual_btn"></label>
-        <label for="radio5" class="manual_btn"></label>
-        <label for="radio6" class="manual_btn"></label>
-        <label for="radio7" class="manual_btn"></label>
-        <label for="radio8" class="manual_btn"></label>
-      
-    </div>
-    </div>
-
-    <button class="btn_project"><a href="https://github.com/Devakumar96" target="_blank">GitHub link</a></button>
-</section>
-
-<section class="contact" id="contact">
-    <h2>CONTACT</h2>
-    <form action="#" class="form" id=" form">
-         <div class="form_control">
-        <label for="username">UserName</label>
-        <input type="text" name="username" id="username" placeholder="Enter your name..."/>
-        <i class="fa-solid fa-circle-check"></i>
-        <i class="fa-solid fa-circle-exclamation"></i>
-        <span></span>
-    </div>
-
-    <div class="form_control">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Enter your email Id..."/>
-        <i class="fa-solid fa-circle-check"></i>
-        <i class="fa-solid fa-circle-exclamation"></i>
-        <span></span>
-    </div>
-
-    <div class="form_control">
-        <label for="message">Message</label>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type Message...." id="message"></textarea>
-        <small>300 Characters Remaining</small>
-    </div>
-
-    <input type="submit" name="btn" id="btn">
-    </form>
-</section>
-<section class="footer">
-    <div class="footer_links">
-        <h2>SOCIAL</h2>
-        <p>Get in touch</p>
-        <a href="https://www.linkedin.com/in/devakumar-nagaraj-567069172/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Devakumar96" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-instagram-square"></i></a>
-        <a href="www.Gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-    </div>
-    <div class="copy_right">
-        <small>Deva <span>|</span> <a href="./index.html"> &copy;CopyRight2022.</a></small>
-    </div>
-</section>
-</div>
-
-
-
-<script src="./script.js"></script>
+    </section>
+    <!-- footer -->
+    <footer>
+        <a href="ndeva96@gmail.com" class="footer-link">ndeva96@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list-item"><a href="" class="social-list-links">a</a></li>
+            <li class="social-list-item"><a href="" class="social-list-links">b</a></li>
+            <li class="social-list-item"><a href="" class="social-list-links">c</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
